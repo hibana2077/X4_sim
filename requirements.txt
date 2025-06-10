@@ -1,0 +1,10 @@
+numpy>=1.21.0
+pyyaml>=6.0
+dataclasses-json>=0.5.7
+typing-extensions>=4.0.0
+
+# 可選依賴 (用於API服務器)
+flask>=2.0.0
+
+# 可選依賴 (用於數據分析和可視化)
+matplotlib>=3.5.0
