@@ -1,0 +1,144 @@
+# X4征服遊戲配置文件
+# 修改這些設置來自定義您的遊戲體驗
+
+game_settings:
+  # 基本設置
+  default_players: 4          # 預設玩家數量 (2-6)
+  default_territories: 12     # 預設領土數量 (8-20)
+  default_max_turns: 15       # 預設最大回合數 (5-30)
+  
+  # 勝利條件
+  territory_win_percentage: 0.6   # 控制多少比例領土獲勝 (0.5-0.8)
+  population_win_percentage: 0.5  # 擁有多少比例人口獲勝 (0.4-0.7)
+  
+  # 人口增長
+  base_growth_rate: 2.5       # 基本人口增長倍數
+  min_growth_rate: 0.8        # 最小資源倍數
+  max_growth_rate: 1.3        # 最大資源倍數
+  
+  # 領土設置
+  min_territory_size: 1       # 最小領土大小
+  max_territory_size: 5       # 最大領土大小
+  starting_population_min: 100  # 起始人口最小值
+  starting_population_max: 500  # 起始人口最大值
+
+# 地形設置
+terrain_settings:
+  # 地形類型及其屬性 (人口容量倍數, 最小防禦加成, 最大防禦加成)
+  plains:
+    capacity_multiplier: 1.2
+    min_defense: 0.0
+    max_defense: 0.2
+    
+  forest:
+    capacity_multiplier: 1.0
+    min_defense: 0.1
+    max_defense: 0.3
+    
+  mountain:
+    capacity_multiplier: 0.7
+    min_defense: 0.2
+    max_defense: 0.5
+    
+  coast:
+    capacity_multiplier: 1.1
+    min_defense: 0.0
+    max_defense: 0.3
+    
+  desert:
+    capacity_multiplier: 0.6
+    min_defense: 0.1
+    max_defense: 0.4
+
+# 戰鬥設置
+combat_settings:
+  # 戰鬥隨機性範圍
+  min_combat_roll: 0.8        # 最小戰鬥骰子 (0.5-1.0)
+  max_combat_roll: 1.2        # 最大戰鬥骰子 (1.0-1.5)
+  
+  # AI行動設置
+  min_population_to_expand: 200  # AI擴張所需最小人口
+  expansion_population_ratio: 0.5 # AI擴張時派遣的人口比例
+
+# LLM設置
+llm_settings:
+  # OpenRouter設置
+  default_model: "anthropic/claude-3-haiku"  # 預設模型
+  alternative_models:
+    - "anthropic/claude-3-haiku"
+    - "openai/gpt-3.5-turbo"
+    - "meta-llama/llama-2-70b-chat"
+  
+  max_tokens: 200             # 最大回應長度
+  temperature: 0.7            # 創意程度 (0.0-1.0)
+  
+  # AI策略提示
+  strategy_prompts:
+    aggressive: "你是一個激進的征服者，優先擴張領土和攻擊敵人。"
+    defensive: "你是一個防守型指揮官，優先鞏固現有領土和人口增長。"
+    balanced: "你是一個平衡型戰略家，在擴張和防守之間尋找最佳平衡。"
+    economic: "你是一個經濟型領袖，優先人口增長和資源管理。"
+
+# 顯示設置
+display_settings:
+  # 地圖顯示
+  map_grid_cols: 4            # 地圖網格列數
+  show_terrain_emoji: true    # 顯示地形emoji
+  show_population_thousands: true  # 用K表示千位數
+  
+  # 遊戲日誌
+  max_recent_events: 10       # 顯示的最近事件數量
+  
+  # 統計顯示
+  progress_bar_length: 30     # 進度條長度
+  
+# 地圖生成設置
+map_generation:
+  # 連接設置
+  min_neighbors: 2            # 每個領土最少鄰居數
+  max_neighbors: 4            # 每個領土最多鄰居數
+  
+  # 領土名稱池
+  territory_names:
+    - "北境之地"
+    - "翠綠谷地" 
+    - "鐵峰山脈"
+    - "黃金海岸"
+    - "暗影沼澤"
+    - "陽光平原"
+    - "霜雪家園"
+    - "紅石高地"
+    - "藍水灣區"
+    - "銀林密境"
+    - "龍脊山峰"
+    - "月港城邦"
+    - "風暴港口"
+    - "荒野邊境"
+    - "水晶谷地"
+    - "火焰沙漠"
+    - "翡翠森林"
+    - "白雪覆蓋"
+    - "黑曜石島"
+    - "彩虹橋樑"
+
+# 遊戲模式設置
+game_modes:
+  quick_demo:
+    players: 4
+    territories: 10
+    max_turns: 3
+    
+  standard:
+    players: 4
+    territories: 12
+    max_turns: 15
+    
+  epic:
+    players: 6
+    territories: 18
+    max_turns: 25
+    
+  micro:
+    players: 3
+    territories: 8
+    max_turns: 10

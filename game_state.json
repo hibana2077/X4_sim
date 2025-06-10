@@ -1,0 +1,333 @@
+{
+  "turn": 16,
+  "max_turns": 15,
+  "players": {
+    "player_0": {
+      "id": "player_0",
+      "name": "Player 1",
+      "color": "🔴",
+      "is_ai": true,
+      "total_population": 5000,
+      "territories_owned": [
+        "t00",
+        "t05",
+        "t06"
+      ],
+      "last_action": "Waited and focused on growth"
+    },
+    "player_1": {
+      "id": "player_1",
+      "name": "Player 2",
+      "color": "🔵",
+      "is_ai": true,
+      "total_population": 6000,
+      "territories_owned": [
+        "t01",
+        "t11",
+        "t04"
+      ],
+      "last_action": "Waited and focused on growth"
+    },
+    "player_2": {
+      "id": "player_2",
+      "name": "Player 3",
+      "color": "🟢",
+      "is_ai": true,
+      "total_population": 11500,
+      "territories_owned": [
+        "t02",
+        "t08",
+        "t07"
+      ],
+      "last_action": "Waited and focused on growth"
+    },
+    "player_3": {
+      "id": "player_3",
+      "name": "Player 4",
+      "color": "🟡",
+      "is_ai": true,
+      "total_population": 8600,
+      "territories_owned": [
+        "t03",
+        "t09",
+        "t10"
+      ],
+      "last_action": "Waited and focused on growth"
+    }
+  },
+  "territories": {
+    "t00": {
+      "id": "t00",
+      "name": "Northlands (1)",
+      "terrain_type": "plains",
+      "size": 2,
+      "defense_bonus": 0.43846665003295276,
+      "resource_multiplier": 1.1724273074918696,
+      "population": 2400,
+      "owner": "player_0",
+      "neighbors": [
+        "t05",
+        "t04",
+        "t09",
+        "t02",
+        "t11"
+      ]
+    },
+    "t01": {
+      "id": "t01",
+      "name": "Greenvalley (2)",
+      "terrain_type": "forest",
+      "size": 3,
+      "defense_bonus": 0.46959703462697566,
+      "resource_multiplier": 1.2768274854955968,
+      "population": 3000,
+      "owner": "player_1",
+      "neighbors": [
+        "t11",
+        "t09",
+        "t04",
+        "t07"
+      ]
+    },
+    "t02": {
+      "id": "t02",
+      "name": "Ironpeak (3)",
+      "terrain_type": "plains",
+      "size": 5,
+      "defense_bonus": 0.15146655726186786,
+      "resource_multiplier": 0.879641699031098,
+      "population": 6000,
+      "owner": "player_2",
+      "neighbors": [
+        "t00",
+        "t08",
+        "t07",
+        "t09"
+      ]
+    },
+    "t03": {
+      "id": "t03",
+      "name": "Goldshore (4)",
+      "terrain_type": "forest",
+      "size": 5,
+      "defense_bonus": 0.48083263881593485,
+      "resource_multiplier": 1.217282531252028,
+      "population": 5000,
+      "owner": "player_3",
+      "neighbors": [
+        "t08",
+        "t11",
+        "t09",
+        "t05",
+        "t10"
+      ]
+    },
+    "t04": {
+      "id": "t04",
+      "name": "Shadowmere (5)",
+      "terrain_type": "desert",
+      "size": 1,
+      "defense_bonus": 0.25036894671940196,
+      "resource_multiplier": 1.127489095464527,
+      "population": 600,
+      "owner": "player_1",
+      "neighbors": [
+        "t01",
+        "t08",
+        "t09"
+      ]
+    },
+    "t05": {
+      "id": "t05",
+      "name": "Sunfield (6)",
+      "terrain_type": "desert",
+      "size": 1,
+      "defense_bonus": 0.12383992409490813,
+      "resource_multiplier": 1.085312112610946,
+      "population": 600,
+      "owner": "player_0",
+      "neighbors": [
+        "t03",
+        "t06",
+        "t08"
+      ]
+    },
+    "t06": {
+      "id": "t06",
+      "name": "Frostheim (7)",
+      "terrain_type": "forest",
+      "size": 2,
+      "defense_bonus": 0.030647441298935152,
+      "resource_multiplier": 0.9343096044340469,
+      "population": 2000,
+      "owner": "player_0",
+      "neighbors": [
+        "t10",
+        "t07",
+        "t09",
+        "t08"
+      ]
+    },
+    "t07": {
+      "id": "t07",
+      "name": "Redstone (8)",
+      "terrain_type": "mountain",
+      "size": 1,
+      "defense_bonus": 0.007070560927259717,
+      "resource_multiplier": 1.1601833296409885,
+      "population": 700,
+      "owner": "player_2",
+      "neighbors": [
+        "t06",
+        "t10",
+        "t01",
+        "t08"
+      ]
+    },
+    "t08": {
+      "id": "t08",
+      "name": "Bluewater (9)",
+      "terrain_type": "plains",
+      "size": 4,
+      "defense_bonus": 0.17461563298422306,
+      "resource_multiplier": 1.2929048595095178,
+      "population": 4800,
+      "owner": "player_2",
+      "neighbors": [
+        "t05",
+        "t10",
+        "t09",
+        "t07"
+      ]
+    },
+    "t09": {
+      "id": "t09",
+      "name": "Silverwood (10)",
+      "terrain_type": "desert",
+      "size": 1,
+      "defense_bonus": 0.21664930542664873,
+      "resource_multiplier": 0.8463533091642116,
+      "population": 600,
+      "owner": "player_3",
+      "neighbors": [
+        "t06",
+        "t04",
+        "t02",
+        "t11",
+        "t10"
+      ]
+    },
+    "t10": {
+      "id": "t10",
+      "name": "Dragonspine (11)",
+      "terrain_type": "desert",
+      "size": 5,
+      "defense_bonus": 0.034329502410906154,
+      "resource_multiplier": 0.8306783781115076,
+      "population": 3000,
+      "owner": "player_3",
+      "neighbors": [
+        "t06",
+        "t03",
+        "t07",
+        "t09",
+        "t11"
+      ]
+    },
+    "t11": {
+      "id": "t11",
+      "name": "Moonhaven (12)",
+      "terrain_type": "desert",
+      "size": 4,
+      "defense_bonus": 0.025357278946968376,
+      "resource_multiplier": 0.8053316936931232,
+      "population": 2400,
+      "owner": "player_1",
+      "neighbors": [
+        "t00",
+        "t10",
+        "t03"
+      ]
+    }
+  },
+  "game_log": [
+    "Turn 1: Game initialized!",
+    "Turn 1: === Starting Turn 1 ===",
+    "Turn 1: Player 1 chose to wait and grow",
+    "Turn 1: Player 2 occupied Moonhaven (12)",
+    "Turn 1: Player 3 occupied Bluewater (9)",
+    "Turn 1: Player 4 occupied Silverwood (10)",
+    "Turn 2: === Starting Turn 2 ===",
+    "Turn 2: Player 1 occupied Sunfield (6)",
+    "Turn 2: Player 2 occupied Shadowmere (5)",
+    "Turn 2: Player 3 occupied Redstone (8)",
+    "Turn 2: Player 4 occupied Dragonspine (11)",
+    "Turn 3: === Starting Turn 3 ===",
+    "Turn 3: Player 1 occupied Frostheim (7)",
+    "Turn 3: Player 2 chose to wait and grow",
+    "Turn 3: Player 3 chose to wait and grow",
+    "Turn 3: Player 4 chose to wait and grow",
+    "Turn 4: === Starting Turn 4 ===",
+    "Turn 4: Player 1 chose to wait and grow",
+    "Turn 4: Player 2 chose to wait and grow",
+    "Turn 4: Player 3 chose to wait and grow",
+    "Turn 4: Player 4 chose to wait and grow",
+    "Turn 5: === Starting Turn 5 ===",
+    "Turn 5: Player 1 chose to wait and grow",
+    "Turn 5: Player 2 chose to wait and grow",
+    "Turn 5: Player 3 chose to wait and grow",
+    "Turn 5: Player 4 chose to wait and grow",
+    "Turn 6: === Starting Turn 6 ===",
+    "Turn 6: Player 1 chose to wait and grow",
+    "Turn 6: Player 2 chose to wait and grow",
+    "Turn 6: Player 3 chose to wait and grow",
+    "Turn 6: Player 4 chose to wait and grow",
+    "Turn 7: === Starting Turn 7 ===",
+    "Turn 7: Player 1 chose to wait and grow",
+    "Turn 7: Player 2 chose to wait and grow",
+    "Turn 7: Player 3 chose to wait and grow",
+    "Turn 7: Player 4 chose to wait and grow",
+    "Turn 8: === Starting Turn 8 ===",
+    "Turn 8: Player 1 chose to wait and grow",
+    "Turn 8: Player 2 chose to wait and grow",
+    "Turn 8: Player 3 chose to wait and grow",
+    "Turn 8: Player 4 chose to wait and grow",
+    "Turn 9: === Starting Turn 9 ===",
+    "Turn 9: Player 1 chose to wait and grow",
+    "Turn 9: Player 2 chose to wait and grow",
+    "Turn 9: Player 3 chose to wait and grow",
+    "Turn 9: Player 4 chose to wait and grow",
+    "Turn 10: === Starting Turn 10 ===",
+    "Turn 10: Player 1 chose to wait and grow",
+    "Turn 10: Player 2 chose to wait and grow",
+    "Turn 10: Player 3 chose to wait and grow",
+    "Turn 10: Player 4 chose to wait and grow",
+    "Turn 11: === Starting Turn 11 ===",
+    "Turn 11: Player 1 chose to wait and grow",
+    "Turn 11: Player 2 chose to wait and grow",
+    "Turn 11: Player 3 chose to wait and grow",
+    "Turn 11: Player 4 chose to wait and grow",
+    "Turn 12: === Starting Turn 12 ===",
+    "Turn 12: Player 1 chose to wait and grow",
+    "Turn 12: Player 2 chose to wait and grow",
+    "Turn 12: Player 3 chose to wait and grow",
+    "Turn 12: Player 4 chose to wait and grow",
+    "Turn 13: === Starting Turn 13 ===",
+    "Turn 13: Player 1 chose to wait and grow",
+    "Turn 13: Player 2 chose to wait and grow",
+    "Turn 13: Player 3 chose to wait and grow",
+    "Turn 13: Player 4 chose to wait and grow",
+    "Turn 14: === Starting Turn 14 ===",
+    "Turn 14: Player 1 chose to wait and grow",
+    "Turn 14: Player 2 chose to wait and grow",
+    "Turn 14: Player 3 chose to wait and grow",
+    "Turn 14: Player 4 chose to wait and grow",
+    "Turn 15: === Starting Turn 15 ===",
+    "Turn 15: Player 1 chose to wait and grow",
+    "Turn 15: Player 2 chose to wait and grow",
+    "Turn 15: Player 3 chose to wait and grow",
+    "Turn 15: Player 4 chose to wait and grow",
+    "Turn 15: 🎉 Game ended! Player 1 wins by territory control!"
+  ],
+  "winner": "player_0"
+}
