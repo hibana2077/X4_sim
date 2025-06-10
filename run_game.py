@@ -27,13 +27,13 @@ def main():
     game = X4Game(api_key)
     
     print("\n🎯 遊戲設置:")
-    print("- 4個AI玩家")
+    print("- 3個AI玩家")
     print("- 12塊領土")
     print("- 15回合限制")
     print("- 人口每回合增長2.5倍")
     print("- 勝利條件: 控制60%領土或50%人口")
     
-    game.initialize_game(num_players=4, map_size=12, max_turns=15)
+    game.initialize_game(num_players=3, map_size=12, max_turns=15)
     
     print("\n🚀 遊戲開始!")
     game.display_game_state()

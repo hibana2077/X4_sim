@@ -1,81 +1,26 @@
 game_log:
 - 'Turn 1: Game initialized!'
 - 'Turn 1: === Starting Turn 1 ==='
-- 'Turn 1: Player 1 chose to wait and grow'
-- 'Turn 1: Player 2 occupied Moonhaven (12)'
-- 'Turn 1: Player 3 occupied Bluewater (9)'
-- 'Turn 1: Player 4 occupied Silverwood (10)'
+- 'Turn 1: Player 1 occupied Sunfield (6)'
+- 'Turn 1: Player 2 chose to wait and grow'
+- 'Turn 1: Player 3 occupied Moonhaven (12)'
 - 'Turn 2: === Starting Turn 2 ==='
-- 'Turn 2: Player 1 occupied Sunfield (6)'
-- 'Turn 2: Player 2 occupied Shadowmere (5)'
-- 'Turn 2: Player 3 occupied Redstone (8)'
-- 'Turn 2: Player 4 occupied Dragonspine (11)'
+- 'Turn 2: Player 1 occupied Shadowmere (5)'
+- 'Turn 2: Player 2 occupied Silverwood (10)'
+- 'Turn 2: Player 3 occupied Bluewater (9)'
 - 'Turn 3: === Starting Turn 3 ==='
 - 'Turn 3: Player 1 occupied Frostheim (7)'
-- 'Turn 3: Player 2 chose to wait and grow'
-- 'Turn 3: Player 3 chose to wait and grow'
-- 'Turn 3: Player 4 chose to wait and grow'
+- 'Turn 3: Player 2 occupied Redstone (8)'
+- 'Turn 3: Player 3 occupied Goldshore (4)'
 - 'Turn 4: === Starting Turn 4 ==='
-- 'Turn 4: Player 1 chose to wait and grow'
+- 'Turn 4: Player 1 occupied Dragonspine (11)'
 - 'Turn 4: Player 2 chose to wait and grow'
 - 'Turn 4: Player 3 chose to wait and grow'
-- 'Turn 4: Player 4 chose to wait and grow'
 - 'Turn 5: === Starting Turn 5 ==='
 - 'Turn 5: Player 1 chose to wait and grow'
 - 'Turn 5: Player 2 chose to wait and grow'
 - 'Turn 5: Player 3 chose to wait and grow'
-- 'Turn 5: Player 4 chose to wait and grow'
-- 'Turn 6: === Starting Turn 6 ==='
-- 'Turn 6: Player 1 chose to wait and grow'
-- 'Turn 6: Player 2 chose to wait and grow'
-- 'Turn 6: Player 3 chose to wait and grow'
-- 'Turn 6: Player 4 chose to wait and grow'
-- 'Turn 7: === Starting Turn 7 ==='
-- 'Turn 7: Player 1 chose to wait and grow'
-- 'Turn 7: Player 2 chose to wait and grow'
-- 'Turn 7: Player 3 chose to wait and grow'
-- 'Turn 7: Player 4 chose to wait and grow'
-- 'Turn 8: === Starting Turn 8 ==='
-- 'Turn 8: Player 1 chose to wait and grow'
-- 'Turn 8: Player 2 chose to wait and grow'
-- 'Turn 8: Player 3 chose to wait and grow'
-- 'Turn 8: Player 4 chose to wait and grow'
-- 'Turn 9: === Starting Turn 9 ==='
-- 'Turn 9: Player 1 chose to wait and grow'
-- 'Turn 9: Player 2 chose to wait and grow'
-- 'Turn 9: Player 3 chose to wait and grow'
-- 'Turn 9: Player 4 chose to wait and grow'
-- 'Turn 10: === Starting Turn 10 ==='
-- 'Turn 10: Player 1 chose to wait and grow'
-- 'Turn 10: Player 2 chose to wait and grow'
-- 'Turn 10: Player 3 chose to wait and grow'
-- 'Turn 10: Player 4 chose to wait and grow'
-- 'Turn 11: === Starting Turn 11 ==='
-- 'Turn 11: Player 1 chose to wait and grow'
-- 'Turn 11: Player 2 chose to wait and grow'
-- 'Turn 11: Player 3 chose to wait and grow'
-- 'Turn 11: Player 4 chose to wait and grow'
-- 'Turn 12: === Starting Turn 12 ==='
-- 'Turn 12: Player 1 chose to wait and grow'
-- 'Turn 12: Player 2 chose to wait and grow'
-- 'Turn 12: Player 3 chose to wait and grow'
-- 'Turn 12: Player 4 chose to wait and grow'
-- 'Turn 13: === Starting Turn 13 ==='
-- 'Turn 13: Player 1 chose to wait and grow'
-- 'Turn 13: Player 2 chose to wait and grow'
-- 'Turn 13: Player 3 chose to wait and grow'
-- 'Turn 13: Player 4 chose to wait and grow'
-- 'Turn 14: === Starting Turn 14 ==='
-- 'Turn 14: Player 1 chose to wait and grow'
-- 'Turn 14: Player 2 chose to wait and grow'
-- 'Turn 14: Player 3 chose to wait and grow'
-- 'Turn 14: Player 4 chose to wait and grow'
-- 'Turn 15: === Starting Turn 15 ==='
-- 'Turn 15: Player 1 chose to wait and grow'
-- 'Turn 15: Player 2 chose to wait and grow'
-- 'Turn 15: Player 3 chose to wait and grow'
-- 'Turn 15: Player 4 chose to wait and grow'
-- 'Turn 15: 🎉 Game ended! Player 1 wins by territory control!'
+- 'Turn 5: 🎉 Player 1 wins the game!'
 max_turns: 15
 players:
   player_0:
@@ -87,8 +32,10 @@ players:
     territories_owned:
     - t00
     - t05
+    - t04
     - t06
-    total_population: 5000
+    - t10
+    total_population: 14600
   player_1:
     color: 🔵
     id: player_1
@@ -97,9 +44,9 @@ players:
     name: Player 2
     territories_owned:
     - t01
-    - t11
-    - t04
-    total_population: 6000
+    - t09
+    - t07
+    total_population: 4200
   player_2:
     color: 🟢
     id: player_2
@@ -108,189 +55,178 @@ players:
     name: Player 3
     territories_owned:
     - t02
+    - t11
     - t08
-    - t07
-    total_population: 11500
-  player_3:
-    color: 🟡
-    id: player_3
-    is_ai: true
-    last_action: Waited and focused on growth
-    name: Player 4
-    territories_owned:
     - t03
-    - t09
-    - t10
-    total_population: 8600
+    total_population: 9800
 territories:
   t00:
-    defense_bonus: 0.43846665003295276
+    defense_bonus: 0.11433252692477908
     id: t00
     name: Northlands (1)
     neighbors:
     - t05
-    - t04
-    - t09
-    - t02
     - t11
+    - t04
+    - t06
     owner: player_0
-    population: 2400
-    resource_multiplier: 1.1724273074918696
-    size: 2
-    terrain_type: plains
+    population: 2100
+    resource_multiplier: 1.1379134601983667
+    size: 3
+    terrain_type: mountain
   t01:
-    defense_bonus: 0.46959703462697566
+    defense_bonus: 0.09510488102339376
     id: t01
     name: Greenvalley (2)
     neighbors:
-    - t11
-    - t09
     - t04
+    - t09
+    - t06
     - t07
+    - t02
+    - t05
     owner: player_1
-    population: 3000
-    resource_multiplier: 1.2768274854955968
-    size: 3
-    terrain_type: forest
+    population: 2200
+    resource_multiplier: 1.2985909999890168
+    size: 2
+    terrain_type: coast
   t02:
-    defense_bonus: 0.15146655726186786
+    defense_bonus: 0.29775690584988485
     id: t02
     name: Ironpeak (3)
     neighbors:
-    - t00
+    - t11
+    - t01
     - t08
-    - t07
     - t09
+    - t03
+    - t10
     owner: player_2
-    population: 6000
-    resource_multiplier: 0.879641699031098
-    size: 5
-    terrain_type: plains
+    population: 4000
+    resource_multiplier: 1.0208030197209759
+    size: 4
+    terrain_type: forest
   t03:
-    defense_bonus: 0.48083263881593485
+    defense_bonus: 0.38890170833250787
     id: t03
     name: Goldshore (4)
     neighbors:
+    - t02
+    - t07
     - t08
-    - t11
-    - t09
     - t05
-    - t10
-    owner: player_3
-    population: 5000
-    resource_multiplier: 1.217282531252028
-    size: 5
-    terrain_type: forest
+    - t06
+    - t09
+    owner: player_2
+    population: 2800
+    resource_multiplier: 1.2906232817878482
+    size: 4
+    terrain_type: mountain
   t04:
-    defense_bonus: 0.25036894671940196
+    defense_bonus: 0.06633297725533122
     id: t04
     name: Shadowmere (5)
     neighbors:
-    - t01
-    - t08
-    - t09
-    owner: player_1
-    population: 600
-    resource_multiplier: 1.127489095464527
-    size: 1
-    terrain_type: desert
+    - t10
+    - t11
+    - t07
+    owner: player_0
+    population: 6000
+    resource_multiplier: 1.0486989031155227
+    size: 5
+    terrain_type: plains
   t05:
-    defense_bonus: 0.12383992409490813
+    defense_bonus: 0.36949029156237095
     id: t05
     name: Sunfield (6)
     neighbors:
+    - t01
     - t03
     - t06
-    - t08
+    - t07
+    - t09
+    - t10
     owner: player_0
-    population: 600
-    resource_multiplier: 1.085312112610946
-    size: 1
-    terrain_type: desert
+    population: 3600
+    resource_multiplier: 1.1081037676024266
+    size: 3
+    terrain_type: plains
   t06:
-    defense_bonus: 0.030647441298935152
+    defense_bonus: 0.4287765453020344
     id: t06
     name: Frostheim (7)
     neighbors:
-    - t10
-    - t07
     - t09
-    - t08
+    - t03
+    - t00
+    - t05
     owner: player_0
-    population: 2000
-    resource_multiplier: 0.9343096044340469
-    size: 2
-    terrain_type: forest
+    population: 1100
+    resource_multiplier: 1.161965045923556
+    size: 1
+    terrain_type: coast
   t07:
-    defense_bonus: 0.007070560927259717
+    defense_bonus: 0.284851484434757
     id: t07
     name: Redstone (8)
     neighbors:
-    - t06
-    - t10
-    - t01
-    - t08
-    owner: player_2
-    population: 700
-    resource_multiplier: 1.1601833296409885
+    - t05
+    - t03
+    - t11
+    - t04
+    owner: player_1
+    population: 1000
+    resource_multiplier: 0.9181613211072952
     size: 1
-    terrain_type: mountain
+    terrain_type: forest
   t08:
-    defense_bonus: 0.17461563298422306
+    defense_bonus: 0.09604589297751076
     id: t08
     name: Bluewater (9)
     neighbors:
-    - t05
+    - t02
     - t10
-    - t09
-    - t07
     owner: player_2
-    population: 4800
-    resource_multiplier: 1.2929048595095178
+    population: 2400
+    resource_multiplier: 1.022555265825749
     size: 4
-    terrain_type: plains
+    terrain_type: desert
   t09:
-    defense_bonus: 0.21664930542664873
+    defense_bonus: 0.26033719359385754
     id: t09
     name: Silverwood (10)
     neighbors:
-    - t06
-    - t04
-    - t02
-    - t11
-    - t10
-    owner: player_3
-    population: 600
-    resource_multiplier: 0.8463533091642116
+    - t05
+    - t03
+    owner: player_1
+    population: 1000
+    resource_multiplier: 1.1654518592393337
     size: 1
-    terrain_type: desert
+    terrain_type: forest
   t10:
-    defense_bonus: 0.034329502410906154
+    defense_bonus: 0.19571486843406083
     id: t10
     name: Dragonspine (11)
     neighbors:
-    - t06
-    - t03
-    - t07
-    - t09
-    - t11
-    owner: player_3
-    population: 3000
-    resource_multiplier: 0.8306783781115076
-    size: 5
+    - t04
+    - t02
+    - t05
+    owner: player_0
+    population: 1800
+    resource_multiplier: 0.9687382333964369
+    size: 3
     terrain_type: desert
   t11:
-    defense_bonus: 0.025357278946968376
+    defense_bonus: 0.29803673483076143
     id: t11
     name: Moonhaven (12)
     neighbors:
+    - t04
     - t00
-    - t10
-    - t03
-    owner: player_1
-    population: 2400
-    resource_multiplier: 0.8053316936931232
-    size: 4
+    owner: player_2
+    population: 600
+    resource_multiplier: 1.1328124571607712
+    size: 1
     terrain_type: desert
-turn: 16
+turn: 6
 winner: player_0

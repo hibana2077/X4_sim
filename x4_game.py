@@ -200,7 +200,7 @@ class X4Game:
         }
         
         data = {
-            "model": "google/gemini-2.0-flash-lite-001",  # Fast and cost-effective
+            "model": "x-ai/grok-3-mini-beta",  # Fast and cost-effective
             "messages": [
                 {
                     "role": "system", 
